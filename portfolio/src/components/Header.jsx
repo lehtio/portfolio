@@ -1,4 +1,5 @@
 import "../styles/Header.css";
+import profileAvatar from "../images/profile-avatar.webp"; // Tuo kuva
 
 export default function Header() {
   return (
@@ -11,8 +12,9 @@ export default function Header() {
         </ul>
       </nav>
       <div className="header-content">
-        <h1 className="otsikko">Portfolio</h1>
-        <p className="header-text">Tähän osioon tulee vielä aikanaan kuva ja jokin järkevä otsikko</p>
+        <img src={profileAvatar} alt="Profile Avatar" className="profile-image" />
+        <h1 className="otsikko">Portfolio - Larppa</h1>
+       
       </div>
     </header>
   );
