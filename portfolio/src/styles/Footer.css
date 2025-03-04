@@ -1,0 +1,37 @@
+.footer {
+    width: 100%;
+    background-color: #d9a29c;
+    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between; /* Teksti vasemmalle, ikonit oikealle */
+    align-items: center;
+  }
+  
+  .footer-text {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 15px; /* Jättää tilaa ikonien väliin */
+    position: absolute;
+    right: 30px; /* Siirretään footerin sisällä oikealle */
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
