@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background-color: #d9a29c;
+    background-color: #606c38;
     color: white;
     padding: 15px 30px;
     position: fixed;
@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between; /* Teksti vasemmalle, ikonit oikealle */
     align-items: center;
+    height: 20px; /* Kiinteä korkeus */
   }
   
   .footer-text {
@@ -18,16 +19,16 @@
   
   .social-media {
     display: flex;
-    gap: 15px; /* Jättää tilaa ikonien väliin */
+    gap: 15px; /* Väli ikonien välille */
     position: absolute;
-    right: 30px; /* Siirretään footerin sisällä oikealle */
-    bottom: 50%;
-    transform: translateY(50%);
+    right: 100px; /* Siirretään footerin oikeaan laitaan */
   }
   
   .icon {
-    width: 30px;
+    width: 30px; /* Yhtenäinen koko */
     height: 30px;
+    border-radius: 50%; /* Pyöreä muoto */
+    object-fit: cover;
     transition: transform 0.2s ease-in-out;
   }
   

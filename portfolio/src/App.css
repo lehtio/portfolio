@@ -1,11 +1,17 @@
 body {
-  background-color: #f5f2de; /* Khaki-tausta */
-  color: black;
+  background-color: #fdfae6; /* Khaki-tausta */
+  color: #596435;
   margin: 0;
+  height: 100%;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
 .main-content {
-  padding-top: 100px;
+  padding-top: 200px;
 }
+
+
+
+
+
