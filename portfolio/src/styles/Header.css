@@ -27,7 +27,7 @@
   margin: 0;
   font-family: Kingdom; /* Kingdom fontti käyttöön */
   text-transform: uppercase; /* Muuttaa isoksi */
-  letter-spacing: 2px; /* Lisää hieman tilaa kirjainten väliin */
+  letter-spacing: 2px; /* Kirjainten väliin tilaa */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Kevyt varjo */
 }
 

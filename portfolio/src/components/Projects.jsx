@@ -1,6 +1,7 @@
 import "../styles/Projects.css";
 import projectImage from "../images/project-image.png"; // Importoidaan kuva
 
+
 const projects = [
   { title: "Project 1", image: projectImage },
   { title: "Project 2", image: projectImage },
