@@ -15,6 +15,9 @@
   .footer-text {
     margin: 0;
     font-size: 1rem;
+    font-family: Kingdom; /* Kingdom fontti käyttöön */
+    text-transform: uppercase; /* Muuttaa isoksi */
+    letter-spacing: 1px; /* Kirjainten väliin tilaa */
   }
   
   .social-media {

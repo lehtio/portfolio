@@ -30,6 +30,9 @@ body {
   
   .title {
     font-size: 24px;
+    font-family: Kingdom; /* Kingdom fontti käyttöön */
+  text-transform: uppercase; /* Muuttaa isoksi */
+  letter-spacing: 2px; /* Kirjainten väliin tilaa */
     font-weight: bold;
     margin-bottom: 15px;
   }

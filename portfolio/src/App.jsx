@@ -3,7 +3,9 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx"; 
 import LoadingScreen from "./components/LoadingScreen.jsx";
 import Projects from "./components/Projects.jsx"; 
+import KieliTaito from "./components/KieliTaito.jsx";
 import "./App.css";
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       {/*<LoadingScreen /> */}
       <p>Here will be the content of the page (tällä hetkellä loading symbol on kommentoituna pois)</p>
       <Projects />
+      <KieliTaito />
       </div>
       <Footer /> 
     </div>

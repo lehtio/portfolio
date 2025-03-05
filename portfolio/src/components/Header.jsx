@@ -38,10 +38,11 @@ export default function Header() {
       <nav className="nav-bar">
         <h1 className="site-title">Portfolio</h1>
         <ul className="nav-links">
-          <li>Projects</li>
-          <li>CV</li>
-          <li>Contacts</li>
           <li>About</li>
+          <li>CV</li>
+          <li>Projects</li>
+          <li>Contacts</li>
+          <li>Blog</li>
         </ul>
       </nav>
       {!isScrolled && <img src={profileAvatar} alt="Profile Avatar" className="profile-image" />}

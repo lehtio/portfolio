@@ -1,0 +1,24 @@
+.languagecontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    margin-bottom: 40px
+  }
+  
+  .language {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flag {
+    font-size: 22px;
+  }
+  
+  .stars {
+    font-size: 22px;
+    color: #fbc02d; /* Keltainen tähtiväri */
+  }
+  
