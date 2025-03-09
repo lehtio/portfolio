@@ -1,0 +1,22 @@
+.info-box {
+    background-color: #ccd5ae; /* Vihreä tausta */
+    color: #606c38;
+    padding: 30px;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    margin-bottom: 40px; /* Jättää tilaa seuraavalle osalle */
+    border: 1px solid #606c38;
+    margin: 50px auto; 
+    margin-bottom: 100px;
+  }
+  .info-box h1 {
+    font-size: 30px;
+    font-family: Kingdom; /* Kingdom fontti käyttöön */
+    text-transform: uppercase; /* Muuttaa isoksi */
+    letter-spacing: 2px; /* Kirjainten väliin tilaa */
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
