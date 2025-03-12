@@ -3,9 +3,9 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx"; 
 import InfoBox from "./components/InfoBox.jsx";
 import LoadingScreen from "./components/LoadingScreen.jsx";
-import Projects from "./components/Projects.jsx"; 
-import KieliTaito from "./components/KieliTaito.jsx";
-import LanguageSkills from "./components/LanguageSkills.jsx";
+import Projektit from "./components/Projects.jsx"; 
+import KieliTaito from "./components/LanguageSkill.jsx";
+
 import "./App.css";
 
 
@@ -16,12 +16,10 @@ function App() {
       <div className="main-content">
       <LoadingScreen />
       <InfoBox />
-  
+     
+      <Projektit />
     
-      <LanguageSkills />
       <KieliTaito />
-      <Projects />
-      
       </div>
       <Footer /> 
     </div>
