@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // React Router käyttöön
 import "../styles/Header.css";
 import profileAvatar from "../images/profile-avatar.webp";
 
@@ -22,9 +23,9 @@ export default function Header() {
 
     window.addEventListener("scroll", checkHeaderSize);
     window.addEventListener("resize", checkHeaderSize);
-    window.addEventListener("load", checkHeaderSize); // Tarkistaa heti kun sivu latautuu
+    window.addEventListener("load", checkHeaderSize);
 
-    checkHeaderSize(); // Tarkistaa heti sivun latauduttua
+    checkHeaderSize();
 
     return () => {
       window.removeEventListener("scroll", checkHeaderSize);
@@ -38,11 +39,10 @@ export default function Header() {
       <nav className="nav-bar">
         <h1 className="site-title">Portfolio</h1>
         <ul className="nav-links">
-          <li>About</li>
-          <li>CV</li>
-          <li>Projects</li>
-          <li>Contacts</li>
-          <li>Blog</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/cv">CV</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/contacts">Contacts</Link></li>
         </ul>
       </nav>
       {!isScrolled && <img src={profileAvatar} alt="Profile Avatar" className="profile-image" />}

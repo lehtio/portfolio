@@ -8,7 +8,7 @@ export default function InfoBox() {
         Hi, I'm Laura, third year information and software engineering student. I'm currently doing my 
         exchange semester in TU Graz studying industrial management. 
       </p>
-      <p>Here you can find information about my projects, skills, and experience!. Don't hesisate to ask if you have something in your mind</p>
+      <p>Here you can find information about my projects, skills, and experience!. Don't hesitate to ask if you have something in your mind</p>
     </div>
   );
 }
