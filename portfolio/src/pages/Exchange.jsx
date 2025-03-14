@@ -1,5 +1,6 @@
 import { useState } from "react";
 import LoadingScreen from "../components/LoadingScreen.jsx";
+import "../styles/ExchangePage.css";
 
 export default function Exchange() {
   const [openCourse, setOpenCourse] = useState(null);
@@ -31,15 +32,15 @@ export default function Exchange() {
     { title: "The History of Information and Communications Engineering", 
         description: "Kurssikuvaus The History of Information and Communications Engineering -kurssille...",
           credits: "2" },
-    { title: "German Intensive Course A1.1",
-        description: "Saksan kielen intensiivikurssi joka kesti 3 viikkoa. Kurssi sisälsi kieliopin ja sanaston lisäksi paljon puhumista ja kirjoittamista. Kurssin aikana tehtiin myös pieniä esitelmiä ja ryhmätöitä. Kurssilla oli suullinen ja kaksi kirjallista koetta",
+    { title: "German Intensive Course",
+        description: "Saksan kielen intensiivikurssi joka kesti 3 viikkoa. Kurssi sisälsi kieliopin ja sanaston lisäksi paljon puhumista ja kirjoittamista. Kurssin aikana tehtiin myös pieniä esitelmiä ja ryhmätöitä. Kurssilla oli suullinen ja kaksi kirjallista koetta.  A1.1",
         credits: "6"
     }      
   ];
 
   return (
     <div className="exchange-container">
-      <LoadingScreen />
+
       <h1>Täällä tietoa vaihdosta ja vaihdon kursseista </h1>
       <p>Jorinaa kursseista ja mitä tuli opittua</p>
       
