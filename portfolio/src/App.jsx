@@ -8,7 +8,8 @@ import KieliTaito from "./components/LanguageSkill.jsx";
 import CV from "./pages/CV.jsx";
 import ProjektiSivu from "./pages/projektiSivu.jsx";
 import Contacts from "./pages/Contacts.jsx";
-import Home from "./pages/Home.jsx"; // Luo erillinen etusivun komponentti
+import Home from "./pages/Home.jsx"; //  erillinen etusivun komponentti
+import Exchange from "./pages/Exchange.jsx";
 
 import "./App.css";
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/cv" element={<CV />} />
         <Route path="/projects" element={<ProjektiSivu />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/exchange" element={<Exchange />} />
       </Routes>
       <Footer /> 
     </Router>

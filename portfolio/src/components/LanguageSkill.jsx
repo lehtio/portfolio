@@ -12,12 +12,17 @@ export default function LanguageProficiency() {
     <div className="language-main-card">
       <span className="language-title">Language skills</span>
       <div className="language-cards">
+
         {languageSkills.map((skill, index) => (
           <div className="language-card" key={index}>
             <span className="language-card-title">{skill.language}</span>
-            <div className="language-stars">{"★".repeat(skill.proficiency)}{"☆".repeat(5 - skill.proficiency)}</div>
+              <div className="language-stars">
+                {"★".repeat(skill.proficiency)}
+                {"☆".repeat(5 - skill.proficiency)}
+              </div>
           </div>
         ))}
+        
       </div>
     </div>
   );

@@ -43,6 +43,7 @@ export default function Header() {
           <li><Link to="/cv">CV</Link></li>
           <li><Link to="/projects">Projects</Link></li>
           <li><Link to="/contacts">Contacts</Link></li>
+          <li><Link to="/exchange">Exchange</Link></li>
         </ul>
       </nav>
       {!isScrolled && <img src={profileAvatar} alt="Profile Avatar" className="profile-image" />}
