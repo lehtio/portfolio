@@ -10,19 +10,31 @@ export default function Exchange() {
 
   const courses = [
     { title: "Enable Innovation",
-         description: "This course is a part of my innovation and industrial management studies. It is a combination of Harward case studies and theoretical parts of innovations, innovation management, innovation process, process thinking, prototyping ideas and modelling innovations within the company." },
+         description: "This course is a part of my innovation and industrial management studies. It is a combination of Harward case studies and theoretical parts of innovations, innovation management, innovation process, process thinking, prototyping ideas and modelling innovations within the company." ,
+         credits: "4.5" },
     { title: "Strategic Management", 
-        description: "Kurssikuvaus Strategic Management -kurssille..." },
+        description: "Kurssikuvaus Strategic Management -kurssille...", 
+        credits: "3" },
+        
     { title: "Value Engineering", 
-        description: "Kurssikuvaus Value Engineering -kurssille..." },
+        description: "Kurssikuvaus Value Engineering -kurssille...",
+        credits: "3" },
     { title: "Operational Risk Management", 
-        description: "Kurssikuvaus Operational Risk Management -kurssille..." },
+        description: "Kurssikuvaus Operational Risk Management -kurssille...",
+        credits: "6" },
     { title: "Design to Value", 
-        description: "Kurssikuvaus Design to Value -kurssille..." },
+        description: "Enable innovation kurssia muistuttava yhdistelmä teoriaa ja case studeja sekä pieni projekti", 
+        credits: "4.5" },
     { title: "Diversity Management", 
-        description: "Kurssikuvaus Diversity Management -kurssille..." },
+        description: "Seminaarikurssi" ,
+        credits: "3"},
     { title: "The History of Information and Communications Engineering", 
-        description: "Kurssikuvaus The History of Information and Communications Engineering -kurssille..." }
+        description: "Kurssikuvaus The History of Information and Communications Engineering -kurssille...",
+          credits: "2" },
+    { title: "German Intensive Course A1.1",
+        description: "Saksan kielen intensiivikurssi joka kesti 3 viikkoa. Kurssi sisälsi kieliopin ja sanaston lisäksi paljon puhumista ja kirjoittamista. Kurssin aikana tehtiin myös pieniä esitelmiä ja ryhmätöitä. Kurssilla oli suullinen ja kaksi kirjallista koetta",
+        credits: "6"
+    }      
   ];
 
   return (
@@ -47,10 +59,14 @@ export default function Exchange() {
               {course.title}
             </h2>
             {openCourse === course.title && (
-              <p className="course-description">{course.description}</p>
+              <>
+                <p className="course-description">{course.description}</p>
+                <p className="course-credits">Credits: {course.credits}</p>
+              </>
             )}
           </div>
         ))}
+        <LoadingScreen />
       </div>
     </div>
   );
