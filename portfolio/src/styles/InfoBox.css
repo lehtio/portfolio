@@ -22,3 +22,16 @@
     font-weight: bold;
     margin-bottom: 15px;
   }
+  .info-box p {
+    font-size: 20px;
+    font-family: Kingdom;
+    text-align: center;
+  }
+ 
+  .info-box a {
+    color: rgb(102, 69, 41);
+   
+    font-size: 20px;
+    font-family: Kingdom;
+    margin-top: 20px;
+  }

@@ -21,6 +21,7 @@
   width: 90%;
   max-width: 1200px;
   
+  
 }
 
 .site-title {
@@ -49,9 +50,14 @@
   cursor: pointer;
   color: white;
 }
+.nav-links li a {
+  color: white; /* Linkin väri valkoiseksi */
+  text-decoration: none; /* Poistaa alleviivauksen */
+}
 
 .nav-links li:hover {
   text-decoration: underline;
+  
 }
 
 .profile-image {
