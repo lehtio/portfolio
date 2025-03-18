@@ -1,5 +1,6 @@
 import LoadingScreen from "../components/LoadingScreen.jsx";
 import Opinnot from "../components/Opinnot.jsx";
+import Harrastukset from "../components/Harrastukset.jsx";
 
 
  
@@ -15,6 +16,9 @@ export default function CV() {
 
         <h1>Koulutus</h1>
         <Opinnot />
+
+        <h1>Vapaaehotistoiminta</h1>
+        <Harrastukset />
         </div>
     );
   }
