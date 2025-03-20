@@ -1,4 +1,4 @@
-/* Exchange.css */
+
 .exchange-container {
     max-width: 800px;  /* Rajoitetaan leveys, jotta teksti pysyy luettavana */
     margin: 0 auto;     /* Keskittää sisällön vaakasuunnassa */
@@ -7,8 +7,9 @@
   
   h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 200px;
   }
+  
   
   .course-list {
     margin-top: 20px;
