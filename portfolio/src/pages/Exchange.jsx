@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LoadingScreen from "../components/LoadingScreen.jsx";
+
 import "../styles/ExchangePage.css";
 
 export default function Exchange() {

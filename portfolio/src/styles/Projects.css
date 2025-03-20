@@ -1,109 +1,112 @@
-body {
-  background-color: #fdfae6;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; 
-}
-
+/* Green container - takes 75% of the screen width */
 .main-card {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  position: relative;
-  max-width: 85%; 
-  padding: 30px; 
+  align-items: center;
+  width: 75%;
+  padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #ccd5ae;
   border: 1px solid #606c38;
-  margin: 50px auto; 
-  margin-bottom: 100px;
+  margin: 50px auto; /* Center the box */
 }
 
+/* Title */
 .title {
   font-size: 24px;
-  font-family: Kingdom; /* Kingdom fontti käyttöön */
-  text-transform: uppercase; /* Muuttaa isoksi */
-  letter-spacing: 2px; /* Kirjainten väliin tilaa */
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
+/* Cards grid - Automatically adjusts based on screen width */
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid */
+  gap: 20px;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 
+/* Individual card */
 .card {
-  position: relative;
-  width: 200px;
-  height: 250px; /* Increased height to accommodate title */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  background-color: white;
-  margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Align title to the bottom */
-  align-items: center;
-  font-size: 20px;
-  color: #606c38;
-  transition: all 0.3s;
-  cursor: pointer;
+  width: 250px;
+  height: 350px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  text-align: center;
 }
 
+/* Image at the top */
 .card img {
   width: 100%;
-  height: 100%;
+  height: 150px;
   object-fit: cover;
-  border-radius: 15px 15px 0 0; /* Rounded corners at the top */
 }
 
-.card-title {
-  width: 100%;
-  padding: 10px;
-  background-color: white;
-  color: #606c38;
-  font-size: 1.2rem;
-  text-align: center;
-  z-index: 1;
-  border-radius: 0 0 15px 15px; /* Rounded corners at the bottom */
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-}
-
-.card-description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #606c38;
-  color: white;
+/* Card content */
+.card-content {
+  padding: 15px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-  padding: 10px;
-  box-sizing: border-box;
-  z-index: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
-.card:hover .card-description {
-  opacity: 1;
+/* Title inside card */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #606c38;
+  margin-bottom: 8px;
 }
 
-.card:hover img {
-  filter: blur(2px);
+/* Description inside card */
+.card-description {
+  font-size: 0.9rem;
+  color: #333;
+  flex-grow: 1; /* Pushes button to bottom */
+}
+
+/* Visit Project Button */
+.project-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 12px;
+  background-color: #606c38;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.project-button:hover {
+  background-color: #445227;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-card {
+    width: 90%; /* Make green container bigger on small screens */
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller cards on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
 }

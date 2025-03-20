@@ -1,7 +1,7 @@
 import LoadingScreen from "../components/LoadingScreen";
 import Projektit from "../components/Projects.jsx";
 import React from "react";
-import "../styles/ProjektiSivu.css";
+import "../styles/Projects.css";
 
 
 export default function Projects() {
