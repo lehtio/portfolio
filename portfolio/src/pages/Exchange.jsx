@@ -53,6 +53,7 @@ export default function Exchange() {
         management to get a better understanding of the field and its different aspects.
       </p>
 
+      <h2>Exchange courses</h2>
       <div className="course-list">
         {courses.map((course, index) => (
           <div key={index} className="course-item">
@@ -67,7 +68,7 @@ export default function Exchange() {
             )}
           </div>
         ))}
-        <LoadingScreen />
+       
       </div>
     </div>
   );
