@@ -34,7 +34,8 @@ export default function Exchange() {
           credits: "2" },
     { title: "German Intensive Course",
         description: "Saksan kielen intensiivikurssi joka kesti 3 viikkoa. Kurssi sisälsi kieliopin ja sanaston lisäksi paljon puhumista ja kirjoittamista. Kurssin aikana tehtiin myös pieniä esitelmiä ja ryhmätöitä. Kurssilla oli suullinen ja kaksi kirjallista koetta.  A1.1",
-        credits: "6"
+        credits: "6", 
+        grade: "2",
     }      
   ];
 
@@ -64,6 +65,9 @@ export default function Exchange() {
               <>
                 <p className="course-description">{course.description}</p>
                 <p className="course-credits">Credits: {course.credits}</p>
+                <p className="course-grade">
+                  Grade: {course.grade ? course.grade : "not graded yet"}
+                </p>
               </>
             )}
           </div>
