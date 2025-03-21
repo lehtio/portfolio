@@ -11,13 +11,13 @@ const studies = [
   {
     school: "Jyväskylän yliopisto",
     degree: "Tekniikan Kandidaatti",
-    description: "Opiskelen Jyväskylän yliopistossa pääaineena tieto- ja ohjelmistotekniikkaa ja sivuaineena liiketaloutta ja kyberturvallisuutta",
+    description: "Kandidaatintutkintoni pääaineena oli tieto- ja ohjelmistotekniikka ja sivuaineopintoina business administration ja cyber security. Kirjoitin kandidaatin tutkielman arvosanalla 5 aiheesta pääsyoikeuksien katselmointi osana pääsyoikeuksien hallinnan kehittämistä. Tutkintoni keskiarvoksi tuli 4,5.",
     studytime: "2022-2024"
   },
   {
     school: "TU Graz",
     degree: "Vaihto, maisterin tutkinnon sivuainekokonaisuus",
-    description: "Tavoitteenani on suorittaa maisterin tutkintoni sivuainekokonaisuus TU Grazissa innovation and industrial management-ohjelmassa.",
+    description: "Tavoitteenani on suorittaa maisterin tutkintoni sivuainekokonaisuus TU Grazissa innovation and industrial management-ohjelmassa. Kursseista voit lukea tarkemmin vaihtosivultani joka löytyy osoitteesta",
     studytime: "2024-2026",
     link: "/exchange"
   }
