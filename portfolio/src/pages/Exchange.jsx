@@ -12,7 +12,8 @@ export default function Exchange() {
   const courses = [
     { title: "Enable Innovation",
          description: "This course is a part of my innovation and industrial management studies. It is a combination of Harward case studies and theoretical parts of innovations, innovation management, innovation process, process thinking, prototyping ideas and modelling innovations within the company." ,
-         credits: "4.5" },
+         credits: "4.5", 
+         file: "../files/Enable_innovation.apkg"},
     { title: "Strategic Management", 
         description: "Kurssikuvaus Strategic Management -kurssille...", 
         credits: "3" },
@@ -68,11 +69,15 @@ export default function Exchange() {
                 <p className="course-grade">
                   Grade: {course.grade ? course.grade : "not graded yet"}
                 </p>
+                {course.file && (
+                  <a href={course.file} download className="course-download">
+                    Download Anki cards for this course
+                  </a>
+                )}
               </>
             )}
           </div>
         ))}
-       
       </div>
     </div>
   );
