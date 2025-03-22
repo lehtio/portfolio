@@ -2,6 +2,7 @@ import InfoBox from "../components/InfoBox.jsx";
 import Projektit from "../components/Projects.jsx";
 import KieliTaito from "../components/LanguageSkill.jsx";
 import LoadingScreen from "../components/LoadingScreen.jsx";
+import Skills from "../components/Skills.jsx";
 
 export default function Home() {
   return (
@@ -9,6 +10,8 @@ export default function Home() {
       <InfoBox />
       <Projektit />
       <KieliTaito />
+      <Skills />
+
       <LoadingScreen />
     </div>
   );
