@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../styles/LanguageSkills.css";
+/* import "../styles/LanguageSkills.css"; */
 
 
 /* drop-down selection!!! (corrected to the radio buttons ) <div className="filter-dropdown">

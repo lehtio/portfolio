@@ -1,4 +1,4 @@
-import "../styles/Projects.css";
+/* import "../styles/Projects.css"; */
 import projectImage from "../images/project-image.png"; // Import project image
 
 const projects = [

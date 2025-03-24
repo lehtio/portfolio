@@ -1,4 +1,4 @@
-import "../styles/LanguageSkills.css";
+/* import "../styles/LanguageSkills.css"; */
 
 const languageSkills = [ /* 5= äidinkieli, 4=jebajeba, ...,  1= alkeet */
   { language: "Finnish", proficiency: 5 },

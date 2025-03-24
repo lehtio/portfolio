@@ -1,10 +1,10 @@
-import "../styles/InfoBox.css";
+ /* import "../styles/InfoBox.css"; */
 import { Link } from "react-router-dom"; // React Router käyttöön
 
 export default function InfoBox() {
   return (
     <div className="info-box">
-      <h1>Welcome to my portfolio</h1>
+      <h1>(infobox) Welcome to my portfolio</h1>
       <p>
         Hi, I'm Laura, third year information and software engineering student. I'm currently doing my 
         exchange semester in TU Graz studying industrial management. If you are interested to know more about my studies abroad, I highly recommend you to 

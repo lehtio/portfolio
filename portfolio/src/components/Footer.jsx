@@ -1,4 +1,4 @@
-import "../styles/Footer.css";
+/* import "../styles/Footer.css"; */
 import linkedinIcon from "../images/linkedin.webp";
 import githubIcon from "../images/github.png"; 
 

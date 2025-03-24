@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // React Router käyttöön
-import "../styles/Header.css";
+ import "../styles/NewHeader.css"; 
 import profileAvatar from "../images/profile-avatar.webp";
 
 export default function Header() {
@@ -28,9 +28,7 @@ export default function Header() {
     checkHeaderSize();
 
     return () => {
-      window.removeEventListener("scroll", checkHeaderSize);
-      window.removeEventListener("resize", checkHeaderSize);
-      window.removeEventListener("load", checkHeaderSize);
+      
     };
   }, []);
 
@@ -42,11 +40,10 @@ export default function Header() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/cv">CV</Link></li>
           <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contacts">Contacts</Link></li>
+          
           <li><Link to="/exchange">Exchange</Link></li>
         </ul>
       </nav>
-      {!isScrolled && <img src={profileAvatar} alt="Profile Avatar" className="profile-image" />}
     </header>
   );
 }
