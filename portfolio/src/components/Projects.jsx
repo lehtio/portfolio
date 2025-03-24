@@ -33,17 +33,17 @@ const projects = [
   },
 ];
 
+/*            <img src={project.image} alt={project.name} className="card-image" /> */
 export default function Projects() {
   return (
-    <div className="main-card">
+    <div className="project-main-card">
       <h2 className="title">Featured Projects</h2>
-      <div className="cards">
+      <div className="project-cards">
         {projects.map((project, index) => (
-          <div key={index} className="card">
-            <img src={project.image} alt={project.name} className="card-image" />
-            <div className="card-content">
-              <div className="card-title">{project.name}</div>
-              <div className="card-description">{project.description}</div>
+          <div key={index} className="project-card">
+            <div className="project-card-content">
+              <div className="project-card-title">{project.name}</div>
+              <div className="project-card-description">{project.description}</div>
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-button">
                 Visit Project
               </a>

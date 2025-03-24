@@ -1,89 +1,70 @@
+/* Header.css */
 .header {
-    width: 100%;
     position: sticky;
     top: 0;
-    left: 0;
-    background-color: #606c38;
-    color: white;
-    padding: 20px 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-    z-index: 1000;
-    justify-content: center; 
-  
-  }
-  
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-   
-   
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: all 0.3s ease;
+    padding: 0.rem 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     
-  }
+}
+
+
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
   
-  .site-title {
-    font-size: 1,0rem;
-    font-weight: bold;
-    margin: 0;
-    font-family: Kingdom; /* Kingdom fontti käyttöön */
-    text-transform: uppercase; /* Muuttaa isoksi */
-    letter-spacing: 2px; /* Kirjainten väliin tilaa */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Kevyt varjo */
-  }
   
-  .nav-links {
-    color: white;
-    list-style: none;
+}
+.header .site-title {
+  font-size: 3rem;
+  font-weight: bold;
+  width: 80%;
+  margin: 0;
+  font-family: Kingdom; /* Kingdom fontti käyttöön */
+  letter-spacing: 2px; /* Kirjainten väliin tilaa */
+  
+}
+
+.header .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 1rem;
+    list-style: none;
     margin: 0;
     padding: 0;
-  
-  }
-  
-  .nav-links li {
-    display: inline;
-    font-size: 1rem;
-    cursor: pointer;
-    color: white;
-  }
-  .nav-links li a {
-    color: white; /* Linkin väri valkoiseksi */
-    text-decoration: none; /* Poistaa alleviivauksen */
-  }
-  
-  .nav-links li:hover {
-    text-decoration: underline;
-    
-  }
-  
-  .profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 10px;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  /* Kun header vie yli 25% näytöstä TAI skrollataan alas */
-  /* .header.scrolled {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 30px;
-    height: 60px;
-  } */
-  /*.header.scrolled .profile-image {
-    display: none; 
-  }
+}
 
-  .header.scrolled .site-title {
-    font-size: 1.5rem; /* Pienempi otsikko 
-  }
-  
-  */
-  
+.header .nav-links li a {
+    text-decoration: none;
+    color: #525252;
+    font-size: 1,5rem;
+    transition: color 0.2s ease;
+}
+
+.header .nav-links li a:hover {
+    color: #171717;
+}
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.25rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .header .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .nav-links {
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

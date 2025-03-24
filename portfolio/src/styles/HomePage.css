@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -18,6 +18,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: left;
   }
   
   .info-content p {
@@ -63,226 +64,111 @@
 
 /* PROJEKTIT */
 
-  .main-card {
-    padding: 4rem 2rem;
-    background-color: #f9fafb;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2.5rem;
-    color: #606c38;
-  }
-  
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .card {
-    background-color: white;
-    border-radius: 0.75rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    max-width: 320px;
-    text-align: left;
-    transition: transform 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card-image {.info-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f9f9f9;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    margin: 50px auto;
+ 
+/* Projects.css */
+.project-main-card {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.info-content {
-    max-width: 60%;
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #171717;
+  text-align: center;
 }
 
-.info-content h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
-.info-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+.project-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: left;
 }
 
-.cv-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    color: #606c38;
-    border: 2px solid #606c38;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+.project-card-image {
+  width: 100%;
+  height: 180px;
+  background-color: #d4d4d4;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
 }
 
-.cv-link:hover {
-    background-color: #606c38;
-    color: white;
+.project-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.info-image {
-    flex-shrink: 0;
+.project-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #171717;
 }
 
-.profile-avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.project-card-description {
+  font-size: 0.875rem;
+  color: #525252;
+  margin-bottom: 1rem;
 }
 
-/* PROJEKTIT */
-
-.main-card {
-    padding: 4rem 2rem;
-    background-color: #f9fafb;
-    text-align: center;
-    
+.project-project-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-.title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2.5rem;
-    color: #606c38;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    
-}
-
-.card {
-    background-color: white;
-    border-radius: 0.75rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    max-width: 320px;
-    text-align: left;
-    transition: transform 0.2s ease;
-    
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card-image {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 1.75rem;
-    background-color: #e5e7eb; /* harmaa placeholder */
-}
-
-.card-content {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.card-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #606c38;
-}
-
-.card-description {
-    font-size: 0.9rem;
-    color: #1b1b1b;
-    line-height: 1.4;
+.project-project-tag {
+  background-color: #e5e5e5;
+  color: #525252;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
 }
 
 .project-button {
-    margin-top: auto;
-    padding: 10px 20px;
-    background-color: white;
-    color: #606c38;
-    border: none; /* Remove border */
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    display: inline-block;
-    transition: background-color 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: white;
+  color: #606c38;
+  border: 2px solid #606c38;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: Bold;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  margin-top: auto;
 }
 
 .project-button:hover {
-    background-color: #606c38;
-    color: white;
+  background-color: #606c38;
+  color: white;
 }
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
-    background-color: #e5e7eb; /* harmaa placeholder */
-  }
-  
-  .card-content {
-    padding: 1rem;
-    display: flex;
+
+@media (max-width: 768px) {
+  .project-card {
     flex-direction: column;
-    gap: 0.75rem;
+    text-align: center;
   }
-  
-  .card-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #606c38;
+
+  .project-card-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 100%;
   }
-  
-  .card-description {
-    font-size: 0.9rem;
-    color: #1b1b1b;
-    line-height: 1.4;
-  }
-  
-  .project-button {
-    margin-top: auto;
-    padding: 10px 20px;
-    background-color: white;
-    color: #606c38;
-    border: 2px solid #606c38;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border-radius: 0.5rem;
-    display: inline-block;
-    transition: background-color 0.2s ease;
-  }
-  
-  .project-button:hover {
-    background-color: #606c38;
-    
-     color: white;
-      }
-      
-  
-  
+}

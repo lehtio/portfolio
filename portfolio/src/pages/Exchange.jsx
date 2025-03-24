@@ -13,7 +13,9 @@ export default function Exchange() {
     { title: "Enable Innovation",
          description: "This course is a part of my innovation and industrial management studies. It is a combination of Harward case studies and theoretical parts of innovations, innovation management, innovation process, process thinking, prototyping ideas and modelling innovations within the company." ,
          credits: "4.5", 
+         grade: "1",
          file: "../files/Enable_innovation.apkg"},
+      
     { title: "Strategic Management", 
         description: "Kurssikuvaus Strategic Management -kurssille...", 
         credits: "3" },
