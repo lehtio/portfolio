@@ -1,5 +1,5 @@
 
-.info-box {
+.ainfo-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   margin: 50px auto; 
   margin-bottom: 100px;
 }
-  .info-box h1 {
+  .ainfo-box h1 {
     font-size: 30px;
     font-family: Kingdom; /* Kingdom fontti käyttöön */
     text-transform: uppercase; /* Muuttaa isoksi */
@@ -22,13 +22,13 @@
     font-weight: bold;
     margin-bottom: 15px;
   }
-  .info-box p {
+  .ainfo-box p {
     font-size: 20px;
     font-family: Kingdom;
     text-align: center;
   }
  
-  .info-box a {
+  .ainfo-box a {
     color: rgb(102, 69, 41);
    
     font-size: 20px;

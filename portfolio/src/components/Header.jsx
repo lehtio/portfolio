@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // React Router käyttöön
- import "../styles/NewHeader.css"; 
+ import "../styles/Header.css"; 
 import profileAvatar from "../images/profile-avatar.webp";
 
 export default function Header() {
