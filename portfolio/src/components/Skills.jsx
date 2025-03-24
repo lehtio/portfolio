@@ -1,5 +1,18 @@
 import React, { useState } from 'react';
+import "../styles/LanguageSkills.css";
 
+
+/* drop-down selection!!! (corrected to the radio buttons ) <div className="filter-dropdown">
+        <select onChange={(e) => setFilter(e.target.value)} value={filter}>
+          <option value="all">All</option>
+          <option value="coding">Coding</option>
+          <option value="methodologies">Methodologies</option>
+          <option value="operating systems">Operating Systems</option>
+          <option value="version control">Version Control</option>
+          <option value="tools">Tools</option>
+          <option value="soft skills">Soft Skills</option>
+        </select>
+      </div> */   
 
 const Skills = [ 
   { skill: "JavaScript", proficiency: 3, class: "coding" },
@@ -31,20 +44,48 @@ export default function LanguageProficiency() {
   const filteredSkills = filter === 'all' ? Skills : Skills.filter(skill => skill.class === filter);
 
   return (
-    <div className="language-main-card">
+    <div className="skill-main-card">
       <span className="language-title">Skills</span>
-      <div className="filter-dropdown">
-        <select onChange={(e) => setFilter(e.target.value)} value={filter}>
-          <option value="all">All</option>
-          <option value="coding">Coding</option>
-          <option value="methodologies">Methodologies</option>
-          <option value="operating systems">Operating Systems</option>
-          <option value="version control">Version Control</option>
-          <option value="tools">Tools</option>
-          <option value="soft skills">Soft Skills</option>
-        </select>
-      </div>
-      <div className="language-cards">
+     
+
+
+      <div className="filtering-skills">
+        <label>
+          <input type="radio" name="filter" value="all" checked={filter === 'all'} onChange={(e) => setFilter(e.target.value)} />
+          All
+        </label>
+        <label>
+          <input type="radio" name="filter" value="coding" checked={filter === 'coding'} onChange={(e) => setFilter(e.target.value)} />
+          Coding
+        </label>
+        <label>
+          <input type="radio" name="filter" value="methodologies" checked={filter === 'methodologies'} onChange={(e) => setFilter(e.target.value)} />
+          Methodologies
+        </label>
+        <label>
+          <input type="radio" name="filter" value="operating systems" checked={filter === 'operating systems'} onChange={(e) => setFilter(e.target.value)} />
+          Operating Systems
+        </label>
+        <label>
+          <input type="radio" name="filter" value="version control" checked={filter === 'version control'} onChange={(e) => setFilter(e.target.value)} />
+          Version Control
+        </label>  
+        <label>
+          <input type="radio" name="filter" value="tools" checked={filter === 'tools'} onChange={(e) => setFilter(e.target.value)} />
+          Tools
+        </label>
+        <label>
+          <input type="radio" name="filter" value="soft skills" checked={filter === 'soft skills'} onChange={(e) => setFilter(e.target.value)} />
+          Soft Skills
+        </label>
+        
+        
+        </div>
+        
+
+
+
+      <div className="skill-cards">
         {filteredSkills.map((skill, index) => (
           <div className="language-card" key={index}>
             <span className="language-card-title">{skill.skill}</span>

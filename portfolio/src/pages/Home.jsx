@@ -7,6 +7,7 @@ import Skills from "../components/Skills.jsx";
 export default function Home() {
   return (
     <div className="main-content">
+      <h1>This is my portfolios fist page. The plan is to build my own portfolio and then finish the project with proper desing</h1>
       <InfoBox />
       <Projektit />
       <KieliTaito />
