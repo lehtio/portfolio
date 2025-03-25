@@ -1,6 +1,6 @@
 
 .exchange-container {
-    max-width: 800px;  /* Rajoitetaan leveys, jotta teksti pysyy luettavana */
+    max-width: 80%;  /* Rajoitetaan leveys, jotta teksti pysyy luettavana */
     margin: 0 auto;     /* Keskittää sisällön vaakasuunnassa */
     padding: 20px;      /* Tilaa ympärille */
   }

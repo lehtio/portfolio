@@ -1,26 +1,14 @@
 .language-main-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  max-width: 85%;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #ccd5ae;
-  border: 1px solid #606c38;
-  margin: 50px auto;
-  margin-bottom: 100px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .language-title {
-  font-size: 24px;
-  font-family: Kingdom;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .language-cards {
@@ -35,9 +23,9 @@
   position: relative;
   width: 200px;
   height: 100px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Small shadow around the border */
   border-radius: 15px;
-  background-color: #fdfae6;
+  background-color: #ffffff; /* White background */
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -53,18 +41,13 @@
   scale: 1.1;
   border: 1px solid #606c38;
   background: #606c38;
-  color: #fdfae6;
+  color: #ffffff;
 }
 
 .language-card-title {
   font-size: 1.5rem;
   font-family: Kingdom;
   letter-spacing: 2px;
- 
-}
-.language-stars {
-  font-size: 1.5rem;
-  margin-top: 10px;
 }
 
 .progress-bar {
@@ -81,56 +64,31 @@
   transition: width 0.3s;
 }
 
-
 .progress-bar-fill:hover {
   height: 100%;
   background-color: #fdfae6;
 }
 
-
-
-
-
 .skill-main-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  max-width: 85%;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #ccd5ae;
-  border: 1px solid #606c38;
-  margin: 50px auto;
-  margin-bottom: 100px;
-}
-
-.skill-title {
-  font-size: 24px;
-  font-family: Kingdom;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-  margin-bottom: 15px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .skill-cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 1.5rem;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
 }
 
-.language-card {
+.skill-card {
   position: relative;
   width: 200px;
   height: 100px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Small shadow around the border */
   border-radius: 15px;
-  background-color: #fdfae6;
+  background-color: #ffffff; /* White background */
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -142,7 +100,15 @@
   cursor: pointer;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .language-cards, .skill-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-
-
-
+  .language-card, .skill-card {
+    width: calc(50% - 50px); /* Two cards per row */
+    margin: 10px;
+  }
+}

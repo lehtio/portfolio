@@ -3,7 +3,7 @@ import Opinnot from "../components/Opinnot.jsx";
 import Harrastukset from "../components/Harrastukset.jsx";
 import Tyokokemus from "../components/Tyokokemus.jsx";
 import Taidot from "../components/Skills.jsx";
-
+import "../styles/CvPage.css";
 
  
 

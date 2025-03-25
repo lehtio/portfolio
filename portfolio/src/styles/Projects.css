@@ -1,4 +1,13 @@
 /* Green container - takes 75% of the screen width */
+
+.projekti-container{
+
+    max-width: 90%;  /* Rajoitetaan leveys, jotta teksti pysyy luettavana */
+    margin: 0 auto;     /* Keskittää sisällön vaakasuunnassa */
+    padding: 10px;
+  
+
+}
 .amain-card {
   display: flex;
   flex-direction: column;

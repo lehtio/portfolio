@@ -1,3 +1,9 @@
+.main-content{
+  max-width: 90%;  /* Rajoitetaan leveys, jotta teksti pysyy luettavana */
+  margin: 0 auto;     /* Keskittää sisällön vaakasuunnassa */
+  padding: 10px;   
+}
+
 .info-box {
     display: flex;
     justify-content: space-between;
