@@ -36,6 +36,7 @@ export default function Header() {
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <nav className="nav-bar">
         <h1 className="site-title">Portfolio</h1>
+      
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/cv">CV</Link></li>
