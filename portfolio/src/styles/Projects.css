@@ -1,28 +1,16 @@
-/* Green container - takes 75% of the screen width */
-
-.projekti-container{
-
-    max-width: 90%;  /* Rajoitetaan leveys, jotta teksti pysyy luettavana */
-    margin: 0 auto;     /* Keskittää sisällön vaakasuunnassa */
-    padding: 10px;
-  
-
-}
-.amain-card {
+/* Pääkontaineri */
+.project-main-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 75%;
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #ccd5ae;
-  
-  margin: 50px auto; /* Center the box */
+
+  margin: 50px auto; /* Keskittää kortit */
 }
 
-/* Title */
-.atitle {
+/* Otsikko */
+.title {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -31,18 +19,18 @@
   text-align: center;
 }
 
-/* Cards grid - Automatically adjusts based on screen width */
-.acards {
+/* Korttien ruudukko */
+.project-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Joustava ruudukko */
   gap: 20px;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 
-/* Individual card */
-.acard {
+/* Yksittäinen kortti */
+.project-card {
   display: flex;
   flex-direction: column;
   width: 250px;
@@ -54,15 +42,16 @@
   text-align: center;
 }
 
-/* Image at the top */
-.acard img {
+/* Kuva kortin yläosassa */
+.project-card img {
   width: 100%;
   height: 150px;
-  object-fit: cover;
+  object-fit: cover; /* Leikkaa kuva sopimaan korttiin */
+  border-bottom: 2px solid #efefec; /* Lisää pieni erottelu */
 }
 
-/* Card content */
-.acard-content {
+/* Kortin sisältö */
+.project-card-content {
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -70,23 +59,31 @@
   justify-content: space-between;
 }
 
-/* Title inside card */
-.acard-title {
+/* Kortin otsikko */
+.project-card-title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #606c38;
+  color: #000000;
   margin-bottom: 8px;
 }
 
-/* Description inside card */
-.acard-description {
+/* Kortin kategoria */
+.project-card-category {
   font-size: 0.9rem;
-  color: #333;
-  flex-grow: 1; /* Pushes button to bottom */
+  font-weight: bold;
+  color: #72777f;
+  margin-bottom: 8px;
 }
 
-/* Visit Project Button */
-.aproject-button {
+/* Kortin kuvaus */
+.project-card-description {
+  font-size: 0.9rem;
+  color: #333;
+  flex-grow: 1; /* Työntää painikkeen alas */
+}
+
+/* "Visit Project" -painike */
+.project-button {
   display: inline-block;
   text-decoration: none;
   padding: 8px 12px;
@@ -99,7 +96,6 @@
   transition: 0.3s;
 }
 
-.aproject-button:hover {
+.project-button:hover {
   background-color: #445227;
 }
-

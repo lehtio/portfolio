@@ -1,4 +1,7 @@
 import projectImage from "../images/project-image.png"; // Import project image
+import UIUXIMAGE from "../images/Portfolio_ui.png"; // Import UI/UX image
+import Vakuutuskuva from "../images/paaikkuna.png"; // Import insurance image
+import SaaApp from "../images/Weatherapp.png"
 
 const projects = [
   { name: "This portfolio website", 
@@ -6,6 +9,12 @@ const projects = [
     description: "This is a portfolio website that I created using React.",
     link: "https://github.com/lehtio/portfolio",
     category:"web"
+  },
+  { name: " UI/UX desing for this portfolio",
+    image: UIUXIMAGE,
+    description: "UI/UX design for this portfolio website that I created using Figma.",
+    link: "https://www.figma.com/proto/DmCQZXpbDVjLFnsT1KXOm6/PORTFOLIO?node-id=12-39&t=1by9sHxNAGKQC6uM-1&starting-point-node-id=12%3A39",
+    category:"UI/UX"
   },
   { name: "bibtext converter", 
     image: projectImage,
@@ -20,14 +29,14 @@ const projects = [
     category:"web"
   },
   { name: "Small weather app",
-    image: projectImage,
+    image: SaaApp, 
     description: " Small weather app using React. I used the OpenWeatherMap API to get the weather data.",
     link: "https://github.com/lehtio/projects",
     category:"web"
   },
-  { name: "vakuutustenhallinnan sovellus",
-    image: projectImage,
-    description: "vakuutustenhallinnan sovellus, jossa voi muokata, poistaa ja lisätä vakuutuksia käyttäjille.",
+  { name: "Vakuutustenhallinnan sovellus",
+    image: Vakuutuskuva,
+    description: "Vakuutustenhallinnan sovellus, jossa voi muokata, poistaa ja lisätä vakuutuksia käyttäjille.",
     link: "https://github.com/osterava/Sovellus-vakuutusten-hallintaan-ohj2",
     category: "desktop application"
   },
@@ -43,6 +52,10 @@ export default function Projects() {
           <div key={index} className="project-card">
             <div className="project-card-content">
               <div className="project-card-title">{project.name}</div>
+              <div className="project-picture">
+                <img src={project.image} alt={project.name} className="card-image" />
+              </div>
+              <div className="project-card-category">{project.category}</div>
               <div className="project-card-description">{project.description}</div>
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-button">
                 Visit Project
