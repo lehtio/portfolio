@@ -29,6 +29,11 @@ const Skills = [
   { skill: "Github", proficiency: 3, class: "version control" },
 
   { skill: "Microsoft Office", proficiency: 3, class: "tools" },
+  { skill: "BPML", proficiency: 3, class: "tools" },
+  { skill: "Figma", proficiency: 3, class: "tools" },
+  { skill: "Canva", proficiency: 3, class: "tools" },
+
+  { skill: "Leadership", proficiency: 3, class: "soft skills" },
 
   { skill: "Problem Solving", proficiency: 3, class: "soft skills" },
   { skill: "Teamwork", proficiency: 3, class: "soft skills" },
@@ -92,7 +97,7 @@ export default function LanguageProficiency() {
             <div className="progress-bar">
               <div
                 className="progress-bar-fill"
-                style={{ width: `${(skill.proficiency / 5) * 100}%` }}
+                style={{ width: `${(skill.proficiency / 6) * 100}%` }}
               ></div>
             </div>
           </div>

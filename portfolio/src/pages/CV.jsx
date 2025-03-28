@@ -12,6 +12,7 @@ export default function CV() {
       <div className="cv-container">
         
         <h1>Oma CV</h1>
+       
         <h1>Työkokemus</h1>
         <Tyokokemus />
         <h1>Koulutus</h1>
