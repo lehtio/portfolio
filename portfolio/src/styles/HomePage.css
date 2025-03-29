@@ -1,180 +1,124 @@
-.main-content{
-  max-width: 90%;  /* Rajoitetaan leveys, jotta teksti pysyy luettavana */
-  margin: 0 auto;     /* Keskittää sisällön vaakasuunnassa */
-  padding: 10px;   
-}
-
-.info-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    margin: 50px auto;
-  }
-  
-  .info-content {
-    max-width: 60%;
-  }
-  
-  .info-content h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  .info-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .cv-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    color: #606c38;
-    border: 2px solid #606c38;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .cv-link:hover {
-    background-color: #606c38;
-    color: white;
-  }
-  
-  .info-image {
-    flex-shrink: 0;
-  }
-  
-  .profile-avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-
-
-  
-
-
-/* PROJEKTIT */
-
- 
-/* Projects.css */
-.project-main-card {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.project-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
+/* General Styles */
+.homepage {
+  font-family: 'Arial Black', sans-serif;
+  margin: 0;
+  padding: 0;
   color: #171717;
-  text-align: center;
-}
-
-.project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
-.project-card {
-  background-color: #ffffff;
-  border-radius: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  text-align: left;
-}
-
-.project-card-image {
-  width: 100%;
-  height: 180px;
-  background-color: #d4d4d4;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  object-fit: cover;
-}
-
-.project-card-content {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-card-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: #171717;
-}
-
-.project-card-description {
-  font-size: 0.875rem;
-  color: #525252;
-  margin-bottom: 1rem;
-}
-
-.project-project-tags {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.project-project-tag {
-  background-color: #e5e5e5;
-  color: #525252;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-}
-
-.project-button {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 20px;
   background-color: white;
-  color: #606c38;
-  border: 2px solid #606c38;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  font-weight: Bold;
-  transition: background-color 0.2s ease, color 0.2s ease;
-  margin-top: auto;
 }
 
-.project-button:hover {
-  background-color: #606c38;
+/* Header Section with Background Image */
+.homepage-header {
+  position: relative;
+  background-image: url("../images/image.png");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
 }
 
-@media (max-width: 768px) {
-  .project-card {
-    flex-direction: column;
-    text-align: center;
-  }
+/* Main name on the image */
+.homepage-title {
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
 
-  .project-card-image {
-    margin-right: 0;
-    margin-bottom: 1rem;
-    width: 100%;
-  }
+/* Vertical subtitle on the left */
+.homepage-subtitle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 5px;
+}
+
+/* WHO AM I in bottom left over the image */
+.about-title {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+  text-shadow: 1px 1px 5px black;
+}
+
+/* Content Section */
+.homepage-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section {
+  flex: 2;
+  padding-right: 30px;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.profile-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.footer-text {
+  color: #4a4a4a;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
 }

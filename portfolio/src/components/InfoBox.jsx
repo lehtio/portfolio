@@ -13,7 +13,7 @@ export default function InfoBox() {
           check my <Link to="/exchange">Exchange</Link> site.
         </p>
         <p>Here you can find information about my projects, skills, and experience! Don't hesitate to ask if you have something in your mind.</p>
-        <Link to="/cv" className="cv-link">Check my CV</Link>
+      
       </div>
       <div className="info-image">
         <img src={profileAvatar} alt="Profile avatar" className="profile-avatar" />
