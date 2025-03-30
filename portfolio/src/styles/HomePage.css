@@ -1,124 +1,90 @@
-/* General Styles */
+/* Yleiset asetukset */
 .homepage {
-  font-family: 'Arial Black', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f7f7f7;
+  color: #000;
   margin: 0;
   padding: 0;
-  color: #171717;
-  background-color: white;
 }
 
-/* Header Section with Background Image */
+/* Header-osa */
 .homepage-header {
   position: relative;
   background-image: url("../images/image.png");
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 900px;
+  badding-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
-}
-
-/* Main name on the image */
-.homepage-title {
-  font-size: 4rem;
-  font-weight: 900;
   text-align: center;
-  margin: 0;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
-/* Vertical subtitle on the left */
-.homepage-subtitle {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 5px;
-}
-
-/* WHO AM I in bottom left over the image */
-.about-title {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  font-size: 2.2rem;
+.homepage-title {
+  font-size: 64px;
   font-weight: bold;
   color: white;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 5px 10px;
-  text-shadow: 1px 1px 5px black;
+  margin: 0;
+
 }
 
-/* Content Section */
+.homepage-subtitle {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 10px;
+  top: 65%;
+  font-weight: bold;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Sisältöosa */
 .homepage-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 60px;
+  flex-wrap: wrap;
 }
 
 .about-section {
-  flex: 2;
-  padding-right: 30px;
-  font-family: 'Courier New', monospace;
-  font-size: 1rem;
+  flex: 1;
+  padding-right: 200px;
+  min-width: 350px;
+}
+
+.about-text {
+  font-size: 20px;
   line-height: 1.6;
+  text-align: left;
+  
+}
+.about-text p {
+  margin-bottom: 20px;
 }
 
 .profile-section {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-width: 200px;
 }
+
 
 .profile-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
   object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Footer */
-.footer {
-  background-color: #fff;
-  color: #333;
-  font-weight: bold;
-  font-size: 0.9rem;
-  border-top: 1px solid #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-}
-
-.footer-text {
-  color: #4a4a4a;
-}
-
-.social-media {
-  display: flex;
-  gap: 15px;
-}
-
-.icon {
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.icon:hover {
-  transform: scale(1.2);
 }
