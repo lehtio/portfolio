@@ -11,7 +11,7 @@ h1 {
   text-align: center;
   margin-bottom: 50px; /* Reduced bottom margin */
   font-size: 2.5rem; /* Larger font size */
-  color: #606c38; /* Green color for the title */
+  color: #0D6478; /* Green color for the title */
 }
 
 .course-list {
@@ -20,7 +20,7 @@ h1 {
 }
 
 .course-item {
-  border: 1px solid #606c38;
+  border: 1px solid #0D6478;
   padding: 20px; /* Increased padding */
   margin-bottom: 20px; /* Increased bottom margin */
   border-radius: 10px; /* More rounded corners */
@@ -38,7 +38,7 @@ h1 {
   font-size: 1.5rem; /* Larger font size */
   font-weight: bold;
   margin: 0;
-  color: #606c38;
+  color: #0D6478;
 }
 
 .course-title:hover {

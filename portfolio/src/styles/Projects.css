@@ -71,7 +71,7 @@
 .project-card-category {
   font-size: 0.9rem;
   font-weight: bold;
-  color: #72777f;
+  color: #0D6478;
   margin-bottom: 8px;
 }
 
@@ -87,7 +87,7 @@
   display: inline-block;
   text-decoration: none;
   padding: 8px 12px;
-  background-color: #606c38;
+  background-color:#0D6478;
   color: white;
   border-radius: 5px;
   font-size: 14px;
@@ -97,5 +97,5 @@
 }
 
 .project-button:hover {
-  background-color: #445227;
+  background-color: #0D6478;
 }

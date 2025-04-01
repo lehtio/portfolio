@@ -1,39 +1,32 @@
-/* Yleiset asetukset */
 .homepage {
   font-family: 'Courier New', Courier, monospace;
   background-color: #f7f7f7;
   color: #000;
   margin: 0;
   padding: 0;
-  padding-top: 180px; /* Tämä siirtää kaiken sisällön headerin alapuolelle */
+  padding-top: 150px; /* Jotta header ei peitä sisältöä */
 }
 
-/* Header-osa */
-/* Header-osa */
-/* Header-osa */
 .homepage-header {
   position: relative;
   background-image: url("../images/image.png");
   background-size: cover;
   background-position: center;
-  height: 900px;
+  height: 850px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align content to the top */
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
-  padding: 0; /* Remove extra padding */
+  padding-top: 0px;
 }
 
 .homepage-title {
-  font-size: 100px;
+  font-size: 120px;
   font-weight: bold;
   color: white;
   margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding-top: 0px; /* Slight padding to move text closer to the top */
-  z-index: 2; /* Ensure it stays above the background */
-  position: relative; /* Ensure proper positioning */
+  z-index: 1;
 }
 
 .homepage-subtitle {
@@ -41,22 +34,21 @@
   transform: rotate(180deg);
   position: absolute;
   left: 10px;
-  top: 65%;
+  top: 60%;
   font-weight: bold;
   color: white;
   font-size: 24px;
   letter-spacing: 2px;
+  z-index: 1;
 }
 
 .about-title {
-  font-size: 100px;
+  font-size: 48px;
   font-weight: bold;
-  color: white;
-  margin-top: 705px;
-
+  color: black;
+  margin-top: 20px;
 }
 
-/* Sisältöosa */
 .homepage-content {
   display: flex;
   justify-content: space-between;
@@ -67,7 +59,7 @@
 
 .about-section {
   flex: 1;
-  padding-right: 200px;
+  padding-right: 100px;
   min-width: 350px;
 }
 
@@ -75,10 +67,6 @@
   font-size: 20px;
   line-height: 1.6;
   text-align: left;
-  
-}
-.about-text p {
-  margin-bottom: 20px;
 }
 
 .profile-section {
@@ -89,10 +77,54 @@
   min-width: 200px;
 }
 
-
 .profile-image {
   width: 250px;
   height: auto;
   border-radius: 15px;
   object-fit: cover;
 }
+
+/* Responsiivisuus mobiililaitteille */
+@media (max-width: 768px) {
+  .homepage-header {
+    height: 600px;
+    padding-top: 20px;
+  }
+
+  .homepage-title {
+    font-size: 68px;
+  }
+
+  .homepage-subtitle {
+    font-size: 25px;
+    top: 50%;
+  }
+
+  .about-title {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .homepage-content {
+    flex-direction: column;
+    padding: 30px 20px;
+    align-items: center;
+  }
+
+  .about-section {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 180px;
+    
+
+  }
+}
+
