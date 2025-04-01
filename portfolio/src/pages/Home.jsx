@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="homepage">
       <header className="homepage-header">
-  <h1 className="homepage-title">LAURA LEHTIÖ</h1>
+  <h1 className="homepage-title">LAURA LEHTIO</h1>
   <p className="homepage-subtitle">PORTFOLIO & BLOG</p>
   <h2 className="about-title">WHO AM I?</h2>
 </header>

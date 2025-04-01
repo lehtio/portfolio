@@ -5,8 +5,11 @@
   color: #000;
   margin: 0;
   padding: 0;
+  padding-top: 180px; /* Tämä siirtää kaiken sisällön headerin alapuolelle */
 }
 
+/* Header-osa */
+/* Header-osa */
 /* Header-osa */
 .homepage-header {
   position: relative;
@@ -14,19 +17,23 @@
   background-size: cover;
   background-position: center;
   height: 900px;
-  badding-left: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Align content to the top */
   text-align: center;
+  padding: 0; /* Remove extra padding */
 }
 
 .homepage-title {
-  font-size: 64px;
+  font-size: 100px;
   font-weight: bold;
   color: white;
   margin: 0;
-
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 0px; /* Slight padding to move text closer to the top */
+  z-index: 2; /* Ensure it stays above the background */
+  position: relative; /* Ensure proper positioning */
 }
 
 .homepage-subtitle {
@@ -42,10 +49,11 @@
 }
 
 .about-title {
-  font-size: 48px;
+  font-size: 100px;
   font-weight: bold;
   color: white;
-  margin-top: 20px;
+  margin-top: 705px;
+
 }
 
 /* Sisältöosa */
