@@ -2,6 +2,7 @@ import projectImage from "../images/project-image.png"; // Import project image
 import UIUXIMAGE from "../images/Portfolio_ui.png"; // Import UI/UX image
 import Vakuutuskuva from "../images/paaikkuna.png"; // Import insurance image
 import SaaApp from "../images/Weatherapp.png"
+import TripAdvisor from "../images/TripAdvisor.png"; // Import TripAdvisor image
 
 const projects = [
   { name: "This portfolio website", 
@@ -21,6 +22,12 @@ const projects = [
     description: "The point of this project was learning how to handle project management  We used Scrum as our project management method.",
     link: "https://github.com/lehtio/miniproject?tab=readme-ov-file",
     category:"web"
+  },
+  { name: "Voice assistant for Trip advisor",
+    image: TripAdvisor,
+    description: "I created ui/ux design for a voice assistant for Trip advisor. The point  was to learn Figma",
+    link:"https://www.figma.com/proto/dEZRWimp20Qh40bg88dSrw/TripAdvisor-Voice-assistant?node-id=1-2&starting-point-node-id=1%3A2&t=x08WayPGdttlBZDY-1",
+    category:"UI/UX"
   },
   { name: "Web project",
     image: projectImage,

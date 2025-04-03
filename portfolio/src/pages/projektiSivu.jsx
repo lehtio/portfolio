@@ -7,7 +7,7 @@ import "../styles/Projects.css";
 export default function Projects() {
     return (
       <div className="projekti-container">
-        <h1>Omat prokkikset</h1>
+        <h1>Projektit</h1>
         <p>Tähän lisätään projektit.Tavoitteena on aikanaan lisätä projekteihin niiden kategoriat ja käytetyt työkalut joiden perusteella sivustolle voidaan lisätä filtteröintimenetelmä.</p>
         
         <p>Kategorioita tulee olemaan web-, ui/ux, media ja sekalainen seurakunta</p>

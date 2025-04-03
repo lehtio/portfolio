@@ -1,4 +1,15 @@
 /* Pääkontaineri */
+.projekti-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding-top: 150px;
+ 
+
+}
+
 .project-main-card {
   display: flex;
   flex-direction: column;
@@ -87,8 +98,9 @@
   display: inline-block;
   text-decoration: none;
   padding: 8px 12px;
-  background-color:#0D6478;
-  color: white;
+  background-color:#ffffff;
+  color: #0D6478;
+  border: 3px solid #0D6478;
   border-radius: 5px;
   font-size: 14px;
   font-weight: bold;
@@ -98,4 +110,51 @@
 
 .project-button:hover {
   background-color: #0D6478;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .projekti-container {
+    padding: 20px; /* Lisää hieman tilaa reunoille mobiilissa */
+    height: auto; /* Poistetaan kiinteä korkeus */
+  }
+  .h1 {
+    font-size: 2rem; /* Pienempi fonttikoko mobiilissa */
+  }
+  .title {
+    font-size: 1.5rem; /* Pienempi fonttikoko mobiilissa */
+    margin-bottom: 10px; /* Pienempi väli otsikon ja korttien välillä */
+  }
+
+  .project-main-card {
+    width: 90%; /* Kortit vievät 90% leveyden mobiilissa */
+    padding: 20px;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr; /* Yksi kortti per rivi mobiilissa */
+    gap: 25px; /* Pienempi väli korttien välillä */
+  }
+
+  .project-card {
+    width: 100%; /* Kortit vievät koko leveyden mobiilissa */
+    height: auto; /* Poistetaan kiinteä korkeus */
+  }
+
+  .project-card img {
+    height: 150px; /* Pienempi kuva mobiilissa */
+  }
+
+  .project-card-title {
+    font-size: 1,5rem; /* Pienempi fonttikoko mobiilissa */
+  }
+
+  .project-card-description {
+    font-size: 0.8rem; /* Pienempi fonttikoko mobiilissa */
+  }
+
+  .project-button {
+    font-size: 12px; /* Pienempi painike mobiilissa */
+    padding: 6px 10px;
+  }
 }

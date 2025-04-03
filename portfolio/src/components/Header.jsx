@@ -18,6 +18,7 @@ export default function Header() {
           <li><Link to="/exchange">BLOG</Link></li>
         </ul>
       </nav>
+     
     </header>
   );
 }
