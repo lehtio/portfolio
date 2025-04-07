@@ -16,22 +16,20 @@ export default function Home() {
         </ul>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hienon kuvan osuus */}
       <header className="homepage-header">
         <h1 className="homepage-title">LAURA LEHTIÖ</h1>
         <p className="homepage-subtitle">PORTFOLIO & BLOG</p>
       </header>
 
-      {/* About Section */}
+      {/* Kuka oon Section */}
       <section id="about" className="homepage-content">
         <div className="about-section">
           <h2 className="about-title">WHO AM I?</h2>
           <p className="about-text">
-            Hi, I'm Laura, third year information and software engineering
-            student. I'm currently doing my exchange semester in TU Graz
-            studying industrial management. If you are interested to know more
-            about my studies abroad, I highly recommend you to check my BLOG
-            page.
+            Moikka, mä olen Laura. Opiskelen Jyväskylän yliopistossa tieto- ja ohjelmistotekniikkaa ja tällä hetkellä TU Grazissa vaihto-opiskelijana 
+            innovation and industrial managementtia. Opintojeni tarkoituksena on oivaltaa ja ymmärtää, miten teknologiaa ja tietotekniikkaa voidaan hyödyntää
+            organisaatioiden ja yritysten kehittämisessä ja miten niitä voidaan käyttää tehokkaasti ja kestävästi.
           </p>
         </div>
         <div className="profile-section">
@@ -39,17 +37,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
+      {/* Prokkis Section */}
       <section id="projects" className="project-section">
-        <h2>Projektit</h2>
-        <p>Tässä on joitain projektejani:</p>
+      <h2 class="projects-title">Projektit</h2>
+        <p>Niin mitäs mä sitten osaan...? No tässä on muutamia esimerkkejä</p>
         <ProjectList />
       </section>
 
-      {/* Contact Section */}
+      {/* yhteydenotto Section */}
       <section id="contact" className="contact-container">
-        <h2>Ota yhteyttä</h2>
-        <p>Tähän lisätään yhteystiedot ja yhteydenottolomake sähköpostitse :)</p>
+       <h2 class="contact-title">Ota yhteyttä</h2>
+        <p>Tosta vierestä pääsee linkkariin ja gittiin kurkkimaan ja pistämään viestiä</p>
 
         <div className="sosiaalinen-media">
           <a href="https://www.linkedin.com/in/laura-lehtiö/" target="_blank" rel="noopener noreferrer">

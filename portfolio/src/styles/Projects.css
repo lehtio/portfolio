@@ -30,11 +30,11 @@
   text-align: center;
 }
 
-/* Korttien ruudukko */
+
 .project-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Joustava ruudukko */
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr); /* Maksimissaan 2 korttia per rivi */
+  gap: 10px; /* Lisää väli korttien väliin */
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -43,14 +43,17 @@
 /* Yksittäinen kortti */
 .project-card {
   display: flex;
+ 
   flex-direction: column;
-  width: 250px;
-  height: 350px;
+  width: 350px;
+  height: 450px;
   background: white;
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
+  padding: 10px;
+  margin: 15px; /* Pakottaa tilaa korttien ympärille */
 }
 
 /* Kuva kortin yläosassa */
