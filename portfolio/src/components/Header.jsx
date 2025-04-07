@@ -12,13 +12,14 @@ export default function Header() {
       
         <ul className="nav-links">
           <li><Link to="/">HOME</Link></li>
-          <li><Link to="/cv">RESUME</Link></li>
           <li><Link to="/projects">PROJECTS</Link></li>
-          
           <li><Link to="/exchange">BLOG</Link></li>
         </ul>
       </nav>
      
     </header>
+
+/*<li><Link to="/cv">RESUME</Link></li>
+ <li><Link to="/exchange">BLOG</Link></li>*/
   );
 }

@@ -7,6 +7,36 @@
   padding-top: 150px; /* Jotta header ei peitä sisältöä */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+
 .homepage-header {
   position: relative;
   background-image: url("../images/image.png");
