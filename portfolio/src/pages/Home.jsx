@@ -8,10 +8,10 @@ import githubIcon from "../images/github.png";
 export default function Home() {
   return (
     <div className="homepage">
-      {/* Navigointi */}
+      {/* Navigointi osien välillä */}
       <nav className="navbar">
         <ul>
-          <li><a href="#about">Kuka?</a></li>
+          <li><a href="#about">Kuka?</a></li>  
           <li><a href="#projects">Projektit</a></li>
           <li><a href="#contact">Ota yhteyttä</a></li>
         </ul>

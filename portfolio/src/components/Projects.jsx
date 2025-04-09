@@ -48,7 +48,6 @@ const projects = [
 export default function Projects() {
   return (
     <div className="project-main-card">
-      <h2 className="title"> Tässä pari puuhaa by minä</h2>
       <div className="project-cards">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
