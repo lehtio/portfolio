@@ -4,6 +4,7 @@ import ProjectList from "../components/Projects.jsx";
 import linkedinIcon from "../images/linkedin.webp";
 import githubIcon from "../images/github.png";
 
+
 export default function Home() {
   return (
     <div className="homepage">
