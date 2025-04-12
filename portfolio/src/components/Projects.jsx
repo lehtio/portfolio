@@ -12,13 +12,13 @@ const projects = [
     link: "https://www.figma.com/proto/DmCQZXpbDVjLFnsT1KXOm6/PORTFOLIO?node-id=12-39&t=1by9sHxNAGKQC6uM-1&starting-point-node-id=12%3A39",
     category:"UI/UX"
   },
-  { name: "bibtext converter", 
+  { name: "Lähdeviitteiden muodon muokkaaja ", 
     image: projectImage,
     description: "The point of this project was learning how to handle project management  We used Scrum as our project management method.",
     link: "https://github.com/lehtio/miniproject?tab=readme-ov-file",
     category:"web"
   },
-  { name: "This portfolio website", 
+  { name: "Tämä portfolio gitissä", 
     image: projectImage,
     description: "This is a portfolio website that I created using React.",
     link: "https://github.com/lehtio/portfolio",
@@ -30,7 +30,7 @@ const projects = [
     link: "https://github.com/lehtio/webproject",
     category:"web"
   },
-  { name: "Small weather app",
+  { name: "Pieni sääsovellus",
     image: SaaApp, 
     description: " Small weather app using React. I used the OpenWeatherMap API to get the weather data.",
     link: "https://github.com/lehtio/projects",

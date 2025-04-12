@@ -48,7 +48,7 @@ export default function Home() {
       {/* yhteydenotto Section */}
       <section id="contact" className="contact-container">
        <h2 class="contact-title">Ota yhteyttä</h2>
-        <p>Tosta vierestä pääsee linkkariin ja gittiin kurkkimaan ja pistämään viestiä</p>
+        <p>Tosta pääsee linkkariin ja gittiin kurkkimaan ja pistämään viestiä</p>
 
         <div className="sosiaalinen-media">
           <a href="https://www.linkedin.com/in/laura-lehtiö/" target="_blank" rel="noopener noreferrer">
