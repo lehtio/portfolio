@@ -1,18 +1,7 @@
 import React, { useState } from 'react';
 /* import "../styles/LanguageSkills.css"; */
 
-
-/* drop-down selection!!! (corrected to the radio buttons ) <div className="filter-dropdown">
-        <select onChange={(e) => setFilter(e.target.value)} value={filter}>
-          <option value="all">All</option>
-          <option value="coding">Coding</option>
-          <option value="methodologies">Methodologies</option>
-          <option value="operating systems">Operating Systems</option>
-          <option value="version control">Version Control</option>
-          <option value="tools">Tools</option>
-          <option value="soft skills">Soft Skills</option>
-        </select>
-      </div> */   
+ 
 
 const Skills = [ 
   { skill: "JavaScript", proficiency: 3, class: "coding" },

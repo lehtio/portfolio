@@ -2,7 +2,11 @@ import projectImage from "../images/project-image.png"; // Import project image
 import UIUXIMAGE from "../images/Portfolio_ui.png"; // Import UI/UX image
 import Vakuutuskuva from "../images/paaikkuna.png"; // Import insurance image
 import SaaApp from "../images/Weatherapp.png"
-import TripAdvisor from "../images/TripAdvisor.png"; // Import TripAdvisor image
+import TripAdvisor from "../images/TripAdvisor.png";
+import BCookBook from "../images/BCookBook.png"; 
+import Opintokorneri from "../images/Opintokorneri.png"; 
+import Portfolio2 from "../images/Portfolio2.png"; // 
+
 
 const projects = [
   
@@ -12,6 +16,13 @@ const projects = [
     link: "https://www.figma.com/proto/DmCQZXpbDVjLFnsT1KXOm6/PORTFOLIO?node-id=12-39&t=1by9sHxNAGKQC6uM-1&starting-point-node-id=12%3A39",
     category:"UI/UX"
   },
+  
+  { name: "B's CookBook", 
+    image: BCookBook,
+    description: "Collection of recipies we did together with our flat during the exchange period",
+    link: "https://github.com/lehtio/BiancasCookBook",
+    category:"web"
+  },
   { name: "Lähdeviitteiden muodon muokkaaja ", 
     image: projectImage,
     description: "The point of this project was learning how to handle project management  We used Scrum as our project management method.",
@@ -19,15 +30,15 @@ const projects = [
     category:"web"
   },
   { name: "Tämä portfolio gitissä", 
-    image: projectImage,
+    image: Portfolio2,
     description: "This is a portfolio website that I created using React.",
     link: "https://github.com/lehtio/portfolio",
     category:"web"
   },
-  { name: "Web project",
-    image: projectImage,
-    description: "nettisivusto, jonne voi koota erilaisia opintoja helpottavia materiaaleja ystävilleni",
-    link: "https://github.com/lehtio/webproject",
+  { name: "Opintokorneri",
+    image: Opintokorneri,
+    description: "nettisivusto, jonne on koottu kanditutkintoon, tutkielmaan, vaihtoon ja opintojen suunnitteluun liittyviä vinkkejä, ",
+    link: "https://github.com/lehtio/Opiskelukorneri",
     category:"web"
   },
   { name: "Pieni sääsovellus",
@@ -44,7 +55,6 @@ const projects = [
   },
 ];
 
-/*            <img src={project.image} alt={project.name} className="card-image" /> */
 export default function Projects() {
   return (
     <div className="project-main-card">
