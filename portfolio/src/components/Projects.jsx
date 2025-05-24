@@ -19,8 +19,8 @@ const projects = [
   
   { name: "B's CookBook", 
     image: BCookBook,
-    description: "Collection of recipies we did together with our flat during the exchange period",
-    link: "https://github.com/lehtio/BiancasCookBook",
+    description: "Collection of recipies we did together with our flat during the exchange period. Link: https://lehtio.github.io/CookBook/ ",
+    link: "https://github.com/lehtio/CookBook",
     category:"web"
   },
   { name: "Lähdeviitteiden muodon muokkaaja ", 

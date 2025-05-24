@@ -41,7 +41,7 @@ export default function Home() {
       {/* Prokkis Section */}
       <section id="projects" className="project-section">
       <h2 class="projects-title">Projektit</h2>
-        <p>Niin mitäs mä sitten osaan...? No tässä on muutamia esimerkkejä</p>
+        <p>Niin mitäs mä sitten osaan...? No tässä on muutamia esimerkkejä projekteista joita oon tehny</p>
         <ProjectList />
       </section>
 
